@@ -1,0 +1,62 @@
+ // ============================================================
+  // LOGIN
+  // ============================================================
+
+  // LOGIN
+  // void login() {
+  //   String email = emailController.text.trim();
+  //   String password = passwordController.text;
+
+  //   setState(() => errorMessage = '');
+
+  //   if (email.isEmpty) {
+  //     setState(() => errorMessage = 'Please enter your email');
+  //     return;
+  //   }
+
+  //   if (!email.contains('@') || !email.contains('.')) {
+  //     setState(() => errorMessage = 'Please enter a valid username');
+  //     return;
+  //   }
+
+  //   if (password.isEmpty) {
+  //     setState(() => errorMessage = 'Please enter your password');
+  //     return;
+  //   }
+
+  //   if (password.length < 8) {
+  //     setState(() => errorMessage = 'Password must be at least 8 characters');
+  //     return;
+  //   }
+
+  //   Navigator.push(
+  //     context,
+  //     MaterialPageRoute(builder: (context) => const WelcomePage()),
+  //   );
+  // }
+
+  // void login() {
+  //   final email = emailController.text.trim();
+  //   final password = passwordController.text.trim();
+
+  //   setState(() {
+  //     errorMessage = '';
+  //   });
+
+  //   if (email.isEmpty || password.isEmpty) {
+  //     setState(() {
+  //       errorMessage = 'Please enter email and password';
+  //     });
+  //     return;
+  //   }
+
+  //   final userProvider = Provider.of<UserProvider>(context, listen: false);
+
+  //   if (userProvider.validateLogin(email, password)) {
+  //     generateVerificationCode();
+  //   } else {
+  //     setState(() {
+  //       errorMessage = 'Invalid email or password';
+  //     });
+  //   }
+  // }
